@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="keywords"
+    content="T4S, Task4Society, Task 4 Society, Yoga, Braga, Guimaraes, Portugal, Exercicio, fitness">
+  <meta name="google-signin-client_id"
+    content="319672739161-8b50249tkro3sgbgfrj2pl1viflg0gt6.apps.googleusercontent.com">
+  <title>Task4Society</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/grayscale.min.css" rel="stylesheet">
+  <link href="css/agency.min.css" rel="stylesheet">
+  <link href="css/login-register.css" rel="stylesheet" />
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+  <link rel="stylesheet" href="css/sb-admin.css">
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- CSS Task4Society -->
+  <link href="css/index.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Task4Society</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu<i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#projects">Sobre Nós</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#portfolio">Atividades</a>
+          </li>
+          <li class="nav-item">
+            <a id="espacosBtn" class="nav-link js-scroll-trigger" href="#portfolioEspacos">Espaços</a>
+          <li class="nav-item">
+            <a id="adminAreaBtn" class="nav-link js-scroll-trigger" href="#adminArea">Admin</a>
+          </li>
+          <li class="nav-item">
+            <a id="detalhesUtilizadorBtn" class="nav-link js-scroll-trigger" data-toggle="modal" href="javascript:void(0)" onclick="openUserDetailsModal();">Perfil</a>
+          </li>
+          <li class="nav-item">
+            <a id="loginBtnNav" class="nav-link js-scroll-trigger" data-toggle="modal" href="javascript:void(0)" onclick="openLoginModal();">Log In</a>
+          </li>
+          <div id="logoutDiv" class=" ">
+            <li class="nav-item">
+              <a id="logoutBtn" class="nav-link" href="javascript:void(0)">Log Out</a>
+            </li>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="masthead">
+    <div class="container d-flex h-100 align-items-center">
+      <div class="mx-auto text-center">
+        <h1 id="welcomeTextHeader" class="mx-auto my-0"><i>Hoje é um bom dia para treinar...</i></h1>
+        <a id="registe-seBtn" class="btn btn-primary" data-toggle="modal" href="javascript:void(0)"
+          onclick="openRegisterModal();">Registe-se</a>
+      </div>
+    </div>
+  </header>
+
+
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section bg-light">
+    <div class="container">
+
+      <!-- Featured Project Row -->
+      <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+        <div class="col-xl-8 col-lg-7">
+          <img class="img-fluid mb-3 mb-lg-0" src="img/bg-masthead.jpg" alt="">
+        </div>
+        <div class="col-xl-4 col-lg-5">
+          <div class="featured-text text-center text-lg-left">
+            <h4>A Task 4 Society</h4>
+            <p class="text-black-50 mb-0">É uma empresa sediada em Braga que pretende trazer até si um leque de locais e
+              ativades disponiveis no nosso país com base no Yoga.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project One Row -->
+      <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+        <div class="col-lg-6">
+          <img class="img-fluid" src="img/yogapraia.png" alt="">
+        </div>
+        <div class="col-lg-6">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-left">
+                <h4 class="text-white">Relaxe</h4>
+                <p class="mb-0 text-white-50">Venha diminuir os seus niveis de stress e ansiedade em grupo e conhecer
+                  novos locais.</p>
+                <hr class="d-none d-lg-block mb-0 ml-0">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Two Row -->
+      <div class="row justify-content-center no-gutters">
+        <div class="col-lg-6">
+          <img class="img-fluid" src="img/yogaeclipse.jpg" alt="">
+        </div>
+        <div class="col-lg-6 order-lg-first">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-right">
+                <h4 class="text-white">Melhore-se</h4>
+                <p class="mb-0 text-white-50">Está comprovado que praticar Yoga o beneficia em todos os campos da sua
+                  vida! Desde redução dos seus níveis de stress e ansiedade, ao alivio de dores corporais e melhoria do
+                  nível de qualidade do sono! </p>
+                <hr class="d-none d-lg-block mb-0 mr-0">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Atividades Portfolio Grid -->
+  <section class="bg-light page-section" id="portfolio">
+    <div class="container">
+      <div class="row ">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Atividades</h2>
+          <div class="btn-group" role="group" aria-label="Basic example" style="padding-bottom: 60px;">
+            <a id="criarAtividadeBtn" class="col-lg-12" data-toggle="modal" href="javascript:void(0)" onclick="openCriarAtividadeModal();">Criar
+              Atividade</a>
+            <!-- <a class="col-lg-2" data-toggle="modal" href="javascript:void(0)" onclick="">Outro botao se necessario</a> -->
+          </div>
+        </div>
+        <div class="row" id="painelAtividades"></div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Espacos Portfolio Grid -->
+    <section class="bg-light page-section" id="portfolioEspacos">
+      <div class="container">
+        <div class="row ">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Espaços</h2>
+            <div class="btn-group" role="group" aria-label="Basic example" style="padding-bottom: 60px;">
+              <a id="criarEspacoBtn" class="col-lg-12" data-toggle="modal" href="javascript:void(0)" onclick="">Criar
+                Espaço</a>
+              <!-- <a class="col-lg-2" data-toggle="modal" href="javascript:void(0)" onclick="">Outro botao se necessario</a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+            <!--------------------------------------------------------------ADMIN AREA---------------------------------------------------------->
+            <!--------------------------------------------------------------ADMIN AREA---------------------------------------------------------->
+            
+            
+            <section class="bg-light page-section" id="adminArea" >
+          <div class="container" >
+            <div class="col-lg-12 text-center" style="background-color: #212529;">
+              <h2 class="section-heading text-uppercase" style="color: aliceblue;">Painel de Administrador</h2>
+            </div>
+            <div class="row">
+    
+
+
+                <!-- Sidebar -->
+                <div class="col-lg-3">
+                <ul class="sidebar navbar-nav ">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="index.html">
+                      <i class="fas fa-fw fa-tachometer-alt"></i>
+                      <span>Dashboard</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" onclick="loadEspacosAdmin()">
+                      <i class="fas fa-fw fa-table"></i>
+                      <span>Espaços</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" onclick="loadPatrocinadoresAdmin()">
+                      <i class="fas fa-fw fa-table"></i>
+                      <span>Patrocionadores</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="materiais.html">
+                      <i class="fas fa-fw fa-table"></i>
+                      <span>Materiais</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="materiaisespacos.html">
+                      <i class="fas fa-fw fa-table"></i>
+                      <span>Materiais por Espaços</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="patrocinios.html">
+                      <i class="fas fa-fw fa-table"></i>
+                      <span>Patrocinios</span></a>
+                  </li>
+                </ul>
+              </div>
+            <!--------------------------------------------------------------CONTEUDO---------------------------------------------------------->
+            <!--------------------------------------------------------------CONTEUDO---------------------------------------------------------->
+                <div class="col-lg-9" id="conteudoAdmin">
+            
+                  <div class="container-fluid">
+            
+                    <!-- Breadcrumbs-->
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item">
+                        <a href="index.html">Dashboard</a>
+                      </li>
+                      <li class="breadcrumb-item active">Inicio</li>
+                    </ol>
+            
+                    <!-- Area Chart Example-->
+                    <div class="card mb-3">
+                      <div class="card-header">
+                        <i class="fas fa-chart-area"></i>
+                       Exemplo de Dashboard</div>
+                      <div class="card-body">
+                        <canvas id="myAreaChart" width="100%" height="30"></canvas>
+                      </div>
+                    </div>
+                </div>
+                </div>
+
+            <!--------------------------------------------------------------Espacos-------------------------------------------------------------------------------------------------------->
+
+                <div id="adminEspacos" style="display: none;">
+                  <div class="container-fluid">
+
+                    <!-- Título da página-->
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item active">Espaços</li>
+                    </ol>
+            
+                  </div>
+            
+            
+                  <!-- DataTables Example -->
+                  <div class="card mb-3">
+                    <div class="card-header">
+                      <i class="fas fa-table"></i>
+                      Lista de Espaços</div>
+                    <div class="card-body">
+                      <div class="table-responsive">
+                        <div id ="newSpace">
+                          <a data-toggle="modal" href="javascript:void(0)" onclick="openSpaceNewModal()"><img src="./img/new.png" width="35" height="35"></img></a>
+                          
+            
+                        </div>
+                        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+            
+                  <div class="container">
+                    <div class="modal fade" id="SpaceDetailsModal">
+                      <div class="modal-dialog login animated">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h4 class="modal-title">Editar Espaços</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                          </div>
+                          <div class="modal-body">
+                            <!--formulario de registo de Espaços-->
+                            <form>
+                              <fielset>
+                                <div class="form-group">
+                                  <label for="Idespaco">Id</label>
+                                  <input id="Idespaco" class="form-control" type="text" placeholder="Idespaco" name="Idespaco" disabled
+                                    data-rule="required|minlength-3">
+                                </div>
+            
+                                <div class="form-group">
+                                  <label for="nome">Nome</label>
+                                  <input id="Nome" class="form-control" type="text" placeholder="Nome" name="nome"
+                                    data-rule="required|minlength-3">
+                                </div>
+            
+                                <div class="form-group">
+                                  <label for="Morada">Morada</label>
+                                  <input type="text" class="form-control" id="Morada" placeholder="Morada">
+                                </div>
+                                <div class="form-row">
+                                  <div class="form-group col-md-4">
+                                    <label for="Localidade">Localidade</label>
+                                    <input type="text" class="form-control" id="Localidade" placeholder="Localidade">
+                                  </div>
+                                  <div class="form-group col-md-4">
+                                    <label for="Distrito">Distrito</label>
+                                    <input type="text" class="form-control" id="Distrito" placeholder="Distrito">
+                                  </div>
+                                  <div class="form-group col-md-4">
+                                    <label for="CP">Código Postal</label>
+                                    <input type="text" class="form-control" id="CP" placeholder="Código Postal">
+                                  </div>
+                                  <div class="form-group col-md-4">
+                                    <label for="CP">Lotacao</label>
+                                    <input type="number" class="form-control" id="Lotacao" placeholder="Lotacao">
+                                  </div>
+                                  <div class="form-group col-md-4">
+                                    <label for="Gestor">Gestor</label>
+                                    <input type="number" class="form-control" id="Gestor" placeholder="Gestor">
+                                  </div>
+                                  
+                                            
+                               </div>
+                               
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                            <button type="button" class="btn btn-primary" onclick="editSpace(Idespaco)">Guardar dados</button>
+            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+            
+                    <!-- /.container-fluid -->
+                    <div class="container">
+                      <div class="modal fade" id="newSpaceModal">
+                        <div class="modal-dialog login animated">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h4 class="modal-title">Novo Espaço</h4>
+                              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                              <!--formulario de registo de espaços-->
+            
+            
+            
+                              <form id="formNewSpace" name="formNewSpace">
+                                <fielset>
+                                  <div class="form-group">
+                                    <label for="newIdespaco">Id</label>
+                                    <input id="newIdespaco" class="form-control" type="text" placeholder="Idespaco" name="Idespaco"
+                                      data-rule="required|minlength-3">
+                                  </div>
+              
+                                  <div class="form-group">
+                                    <label for="newNome">Nome</label>
+                                    <input id="newNome" class="form-control" type="text" placeholder="Nome" name="nome"
+                                      data-rule="required|minlength-3">
+                                  </div>
+              
+                                  <div class="form-group">
+                                    <label for="newMorada">Morada</label>
+                                    <input type="text" class="form-control" id="newMorada" placeholder="Morada">
+                                  </div>
+                                  <div class="form-row">
+                                    <div class="form-group col-md-4">
+                                      <label for="newLocalidade">Localidade</label>
+                                      <input type="text" class="form-control" id="newLocalidade" placeholder="Localidade">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                      <label for="newDistrito">Distrito</label>
+                                      <input type="text" class="form-control" id="newDistrito" placeholder="Distrito">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                      <label for="newCP">Código Postal</label>
+                                      <input type="text" class="form-control" id="newCP" placeholder="Código Postal">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                      <label for="newLotacao">Lotacao</label>
+                                      <input type="number" class="form-control" id="newLotacao" placeholder="Lotacao">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                      <label for="newGestor">Gestor</label>
+                                      <input type="number" class="form-control" id="newGestor" placeholder="Gestor">
+                                    </div>
+                                  </div>
+                                  <input type="file" name="pic" accept="image/*">
+                                  <input type="submit">
+                            
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                              <button type="button" class="btn btn-primary" onclick="saveSpace()">Guardar dados</button>
+              
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+            
+            
+            
+                  </div>
+                </div>
+                </div>
+            <!--------------------------------------------------------------Espacos END-------------------------------------------------------------------------------------------------------->
+
+            <!--------------------------------------------------------------Patrocinadores-------------------------------------------------------------------------------------------------------->
+          <div id="adminPatrocinadores" style="display: none;">
+            <div id="content-wrapper" >
+
+              <div class="container-fluid">
+        
+                <!-- Título da página-->
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item active">Patrocinadores</li>
+                </ol>
+        
+              </div>
+        
+        
+              <!-- DataTables Example -->
+              <div class="card mb-3">
+                <div class="card-header">
+                  <i class="fas fa-table"></i>
+                  Lista de Patrocinadores</div>
+                <div class="card-body">
+                  <div class="table-responsive">
+                    <div id="newSpace">
+                      <a data-toggle="modal" href="javascript:void(0)" onclick="openSponsorNewModal()"><img
+                          src="./img/new.png" alt="" width="35" height="35"></img>Adicionar: </a>
+                    </div>
+                    <table class="table table-bordered" id="dataTableSponsor" width="100%" cellspacing="0">
+        
+                    </table>
+                  </div>
+                </div>
+              </div>
+        
+              <!-- /.container-fluid -->
+              <div class="container">
+                <div class="modal fade" id="newSponsorModal">
+                  <div class="modal-dialog login animated">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title">Novo Espaço</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      </div>
+                      <div class="modal-body">
+                        <!--formulario de registo de patrocinadores-->
+                        <form id="formNewSponsor" name="formNewSponsor">
+                          <fielset>
+                            <div class="form-group">
+                              <label for="newIdPatrocinador">Id</label>
+                              <input id="newIdPatrocinador" class="form-control" type="text" placeholder="IdPatrocinador"
+                                name="IdPatrocinador" data-rule="required|minlength-3">
+                            </div>
+                            <div class="form-group">
+                              <label for="newNome">Nome</label>
+                              <input id="newNome" class="form-control" type="text" placeholder="Nome" name="nome"
+                                data-rule="required|minlength-3">
+                            </div>
+                            <div class="form-group">
+                              <label for="newLogotipo">Logotipo</label>
+                              <input type="text" class="form-control" id="newLogotipo" placeholder="Logotipo">
+                            </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary" onclick="saveSponsor()">Guardar dados</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!---->
+        
+                <div class="container">
+                  <div class="modal fade" id="SponsorDetailsModal">
+                    <div class="modal-dialog login animated">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h4 class="modal-title">Editar Patrocinador</h4>
+                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                          <!--formulario de registo de patrocinadores-->
+                          <form>
+                            <div class="form-group">
+                              <label for="Idpatrocinador">Id</label>
+                              <input id="Idpatrocinador" class="form-control" type="text" placeholder="Idpatrocinador" disabled
+                                name="Idpatrocinador" data-rule="required|minlength-3">
+                            </div>
+                            <div class="form-group">
+                              <label for="Nome">Nome</label>
+                              <input id="Nome" class="form-control" type="text" placeholder="Nome" name="Nome"
+                                data-rule="required|minlength-3">
+                            </div>
+                            <div class="form-group">
+                              <label for="Logotipo">Logotipo</label>
+                              <input type="text" class="form-control" id="Logotipo" placeholder="Logotipo">
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                              <button type="button" class="btn btn-primary" onclick="editSponsor(Idpatrocinador)">Guardar dados</button>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+        
+        
+        
+                </div>
+                <!-- /.content-wrapper -->
+        
+              </div>
+              <!-- /#wrapper -->
+            </div>
+          </div>
+            <!--------------------------------------------------------------Patrocinadores END-------------------------------------------------------------------------------------------------------->
+
+            <!--------------------------------------------------------------Espacos-------------------------------------------------------------------------------------------------------->
+
+
+            <!--------------------------------------------------------------CONTEUDO---------------------------------------------------------->
+            <!--------------------------------------------------------------CONTEUDO---------------------------------------------------------->
+          
+        
+            
+
+
+                </div>
+            </div>
+        </section>
+
+
+  <!-- Signup Section -->
+  <section id="signup" class="signup-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-lg-8 mx-auto text-center">
+          <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+          <h2 class="text-white mb-5">Inscreva-se na nossa mailling list para receber as nossas atualizações!</h2>
+          <form class="form-inline d-flex">
+            <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="mailingListInput"
+              placeholder="Introduza o seu email...">
+            <button id="mailingListBtn" type="submit" class="btn btn-primary mx-auto" href="javascript:void(0)" onclick="newsletterSend()">Eu quero receber emails!</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  
+  <!-- Contact Section -->
+  <section class="contact-section bg-black">
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-md-4 mb-3 mb-md-0" >
+          <div class="card py-4 h-100 clickable-pointer" data-toggle="modal" href="#portfolioModalMap">
+            <div class="card-body text-center">
+                      <i class="fas fa-map-marked-alt text-primary mb-2" ></i>
+                      <h4 class="text-uppercase m-0">Morada</h4>
+                      <hr class="my-4">
+              <div class="small text-black-50">Morada Nº Tal, Braga, Portugal</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100 clickable-pointer">
+            <a class="fillDiv" href="mailto:ptasksociety@gmail.com" target="_blank"></a>
+            <div class="card-body text-center">
+              <i class="fas fa-envelope text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">Email</h4>
+              <hr class="my-4">
+              <div class="small text-black-50">
+                <a  target="_blank" rel="noopener noreferrer">ptasksociety@gmail.com</a>
+              </div>
+            </div>         
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <a class="fillDiv" href="tel:+351253253253"></a>
+            <div class="card-body text-center">
+              <i class="fas fa-mobile-alt text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">Telefone</h4>
+              <hr class="my-4">
+              <div class="small text-black-50">+351 253 253 253</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="social d-flex justify-content-center">
+        <a href="https://www.twitter.com" class="mx-2">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.facebook.com/" class="mx-2">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black small text-center text-white-50">
+    <div class="container">
+      Copyright &copy; Task4Society 2019
+    </div>
+  </footer>
+
+  <!------------------------------------------------------------------------------------- MODAIS ------------------------------------------------------------------------------------------------>
+  <!------------------------------------------------------------------------------------- MODAIS ------------------------------------------------------------------------------------------------>
+
+
+  <!-- Google Maps Location - Modal -->
+  <div class="modal fade" id="portfolioModalMap" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2985.393110716848!2d-8.398425484325571!3d41.56073589319323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd24fc279db73165%3A0x753290b0d1b763f0!2sUniversity%20of%20Minho%20-%20Campus%20of%20Gualtar!5e0!3m2!1sen!2spt!4v1575053803567!5m2!1sen!2spt" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="false"></iframe>                
+              </div>
+              </div>
+  </div>
+
+  <!-- Editar detalhes de utilizador - Modal -->
+  <div class="modal fade formFieldsInputs" id="userDetailsModal">
+    <div class="modal-dialog login animated">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">O seu perfil</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        </div>
+        <div class="modal-body">
+          <form id="editarUserDetailsForm">
+            <fielset>
+              <div class="form-group">
+                <label for="loggedInUsername">Username</label>
+                <input id="loggedInUsername" class="form-control" type="text" placeholder="Nome de Utilizador"
+                  name="username" data-rule="required|minlength-4">
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="loggedInPassword">Password</label>
+                  <input id="loggedInPassword" class="form-control" type="password" placeholder="Password"
+                    name="password" data-rule="required|minlength-6" autocomplete="off">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="loggedInPasswordConfirmation">Confirmar Password</label>
+                  <input id="loggedInPasswordConfirmation" class="form-control" type="password"
+                    placeholder="Repetir Password" name="password_confirmation" data-rule="required|password">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="loggedInNome">Nome</label>
+                <input id="loggedInNome" class="form-control" type="text" placeholder="Nome" name="nome"
+                  data-rule="required|minlength-3">
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-8">
+                  <label for="loggedInEmail">E-mail</label>
+                  <input id="loggedInEmail" class="form-control" type="text" placeholder="Email" name="email"
+                    data-rule="required|email" />
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="loggedInTelefone">Nº Telefone</label>
+                  <input id="loggedInTelefone" type="number" class="form-control" id="telefone"
+                    placeholder="Nº Telefone">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="loggedInMorada">Morada</label>
+                <input if="loggedInMorada" type="text" class="form-control" id="Morada" placeholder="Morada">
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-4">
+                  <label for="loggedInLocalidade">Localidade</label>
+                  <input id="loggedInLocalidade" type="text" class="form-control" id="Localidade"
+                    placeholder="Localidade">
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="loggedInDistrito">Distrito</label>
+                  <input id="loggedInDistrito" type="text" class="form-control" id="Distrito" placeholder="Distrito">
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="loggedInCP">Código Postal</label>
+                  <input id="loggedInCP" type="number" class="form-control" id="CP" placeholder="Código Postal">
+                </div>
+              </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary w-50" data-dismiss="modal">Cancelar</button>
+          <button id="guardarDadosBtn" type="button" class="btn btn-primary w-50" onclick=" ">Guardar dados</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal for Login/Register -->
+  <div class="modal fade login" id="loginModal">
+    <div class="modal-dialog login animated">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Login com</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div class="box">
+            <div class="content">
+              <div class="social">
+                <div id="googleSignin"></div>
+              </div>
+              <div class="division">
+                <div class="line l"></div>
+                <span>ou</span>
+                <div class="line r"></div>
+              </div>
+              <div class="form loginBox">
+                <form id="loginUser" method="POST" accept-charset="UTF-8">
+                  <input id="emailLogin" class="form-control" type="text" placeholder="Email" name="email" data-rule="required|email" />
+                  <input id="passwordLogin" class="form-control" type="password" placeholder="Password" name="password" data-rule="required|minlength-6" autocomplete="off">
+                  <input id="loginBtn" class="btn btn-default btn-login" type="submit" value="Login">
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="content registerBox" style="display:none;">
+              <div class="form">
+                <!-- Form para registo de conta -->
+                <form id="createUser" method="POST" accept-charset="UTF-8" onsubmit="return checkForm(this);">
+                  <input id="usernameNew" class="form-control" type="text" placeholder="Nome de Utilizador" name="usernameNew"
+                    data-rule="required|minlength-4">
+                  <input id="nomeNew" class="form-control" type="text" placeholder="Nome" name="nome"
+                    data-rule="required|minlength-3">
+                  <input id="emailNew" class="form-control" type="text" placeholder="Email" name="email"
+                    data-rule="required|email" />
+                  <input id="passwordNew" class="form-control" type="password" placeholder="Password" name="password"
+                    data-rule="required|password|minlength-6" autocomplete="off">
+                  <input id="password_confirmationNew" class="form-control" type="password" placeholder="Repetir Password"
+                    name="password_confirmation" data-rule="required|password">
+                  <input id="signupBtn" class="btn btn-default btn-register" type="submit" value="Criar conta">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <div class="forgot login-footer">
+            <span>Deseja
+              <a href="javascript: showRegisterForm();">criar uma conta</a>
+              ?</span>
+          </div>
+          <div class="forgot register-footer" style="display:none">
+            <span>Já tem uma conta?</span>
+            <a href="javascript: showLoginForm();">Login</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Criar Atividade - Modal -->
+  <div class="modal fade formFieldsInputs" id="criarAtividadeModal">
+    <div class="modal-dialog login animated">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Criar Atividade</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        </div>
+        <div class="modal-body">
+          <form id="criarActividadeForm">
+            <fielset>
+              <div class="form-group">
+                <label for="nomeAtividade">Nome da Atividade</label>
+                <input id="nomeAtividade" class="form-control" type="text" placeholder="Nome da Atividade"
+                  name="nomeAtividade" data-rule="required|minlength-5">
+              </div>
+
+
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="custoNovaAtividade">Custo</label>
+                  <input id="custoNovaAtividade" class="form-control" type="number" placeholder="Custo da Atividade" data-rule="required|maxlength-3" oninput="this.value=this.value.slice(0,3)"/>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="nParticipantesNovaAtividade">Numero de Participantes</label>
+                  <input id="nParticipantesNovaAtividade" type="number" class="form-control" placeholder="Nº Participantes" oninput="this.value=this.value.slice(0,2)" data-rule="required|maxlength-2"/>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="dataHoraNovaAtividade">Data e hora</label>
+                <input class="form-control" type="datetime-local" name="dataHoraAtividade" id="dataHoraNovaAtividade">
+              </div>
+
+              <div class="form-row">
+                <div class="btn-group col-md-6">
+                  <div class="dropdown w-100">
+                    <label for="dropdownTipoNovaAtividade">Tipo de Atividade</label>
+                    <select class="btn-dropdown" id="dropdownDivTipNovaAtividade" class="form-control" type="text"></select>                  
+                  </div>
+                </div>
+                <div class="btn-group col-md-6">
+
+                  
+
+                  <div class="dropdown w-100">
+                    <label for="dropdownEspacoNovaAtividade">Espaço</label>
+                    <select class="btn-dropdown dropdown-toggle" id="dropdownDivEspacoNovaAtividade" class="form-control" type="text"></select>
+                  </div>
+                </div>
+              </div>
+
+              <!-- <div class="form-group file-selector">
+                <form method="post" enctype="multipart/form-data">
+                  <label for="imagemNovaAtividade">Escolher Imagem:</label>
+                  <input id="imagemNovaAtividade" name="imagemNovaAtividade" type="file" class="form-control-file" accept=".png, .jpeg, .jpg" onchange="validateImagem()">
+                </form>
+              </div> -->
+
+              <div class="form-group">
+                <label for="urlImagemAtividade">Link para imagem a usar</label>
+                <input id="urlImagemAtividade" class="form-control" type="text" placeholder="URL do link a usar"
+                  name="urlImagemAtividade" data-rule="required|minlength-10">
+              </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary w-50" data-dismiss="modal">Cancelar</button>
+          <button id="criaNovaAtividadeBtn" type="button" class="btn btn-primary w-50">Criar Atividade</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Portfolio Atividades Modais -->
+  <div id="portfolioAtividadesModais">
+
+  
+
+<!------------------------------------------------------------------------------------- MODAIS END ------------------------------------------------------------------------------------------------>
+<!------------------------------------------------------------------------------------- MODAIS END ------------------------------------------------------------------------------------------------>
+
+
+
+
+  <!-- Google Scripts -->
+  <script>
+    function onSuccess(googleUser) {
+      console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+    }
+    function onFailure(error) {
+      console.log(error);
+    }
+    function renderButton() {
+      gapi.signin2.render('googleSignin', {
+        'scope': 'profile email',
+        'width': 240,
+        'height': 50,
+        'padding-left': 20,
+        'longtitle': true,
+        'theme': 'dark',
+        'onsuccess': onSuccess,
+        'onfailure': onFailure
+      });
+    }
+  </script>
+
+  <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+  
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <!-- Custom scripts for this template -->
+  <script src="js/grayscale.min.js"></script>
+  <!-- Login/Register Modal -->
+  <script src="js/login-register.js"></script>
+  <!-- Validator JS -->
+  <script src="./js/js-form-validator.js"></script>
+
+  
+  <script>
+    // Init validator with standart settings
+    new Validator(document.querySelector('form[id="loginUser"]'), function (err, res) {
+      return res;
+    });
+  </script>
+
+
+   <!-- Iniciar Validator -->
+  <script>    
+    new Validator(document.querySelector('form[id="createUser"]'), function (err, res) {
+      return res;
+    });
+
+    new Validator(document.querySelector('form[id="criarActividadeForm"]'), function (err, res) {
+    return res;
+  });
+
+  new Validator(document.querySelector('form[id="editarUserDetailsForm"]'), function (err, res) {
+    return res;
+  });
+  </script>
+
+
+
+
+  <!-- Javascript Task4Society -->
+  <script src="js/index.js"></script>
+
+</body>
+
+</html>
