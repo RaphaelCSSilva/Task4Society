@@ -1,0 +1,48 @@
+.displayability-hidden{
+    display: none;
+}
+
+.btn-dropdown {
+    background-color: #64a19d46;
+    box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+    padding: 0.75rem 0.25rem;
+    font-family: "Varela Round";
+    font-size: 80%;
+    /* text-transform: uppercase; */
+    letter-spacing: 0.15rem;
+    border: 0;
+    width: 100%;
+  }
+
+.file-selector {
+    padding-top: 5%;
+    padding-left: 12%;
+  }
+
+.clickable-pointer {
+  cursor:pointer;
+}
+
+.formFieldsInputs input[type="text"], .formFieldsInputs input[type="number"], .formFieldsInputs input[type="password"], .formFieldsInputs input[type="datetime-local"] {
+  border-radius: 3px;
+  border: none;
+  color: #333333;
+  font-size: 16px;
+  height: 46px;
+  margin-bottom: 5px;
+  padding: 13px 12px;
+  width: 100%;
+}
+
+.formFieldsInputs input[type="text"]:focus, .formFieldsInputs input[type="number"]:focus, .formFieldsInputs input[type="password"]:focus, .formFieldsInputs input[type="datetime-local"]:focus {
+  color: #333333;
+}
+
+.fillDiv {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;     
+  z-index: 1;
+}
